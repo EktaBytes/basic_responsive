@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+}
+
+#left{
+     height: 100%;
+     width: 40%;
+     position: relative;
+
+     /* background: #000; */
+}
+
+#lnav{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+     width: 100%;
+     padding: 20px 30px;
+}
+
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+       margin-right: 20px;
+       text-decoration: none;
+       color: #000;
+       font-weight: 500;
+       font-size: 14px;
+}
+
+
+#lnavr i{
+    color: royalblue;
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textcenter h1{
+    font-size:90px ;
+    font-weight: 900;
+}
+
+#textcenter p{
+    opacity: 6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size:13px ;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: #6e74e2;
+}
+
+#rtop{
+height: 50%;
+width: 100%;
+background-color: #1ecd67;
+display: flex;
+}
+
+#rbottom{
+    height: 50%;
+    width: 100%;
+   background-image: url(https://cdn.pixabay.com/photo/2023/05/11/02/11/flower-7985344_1280.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+#topleft{
+    height: 100%;
+    width: 55%;
+   background-image: url(https://cdn.pixabay.com/photo/2017/08/08/00/57/plants-2609843_1280.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+#topright{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/20/23/05/orange-3417063_960_720.jpg);
+    background-position: center;
+   background-size: cover;
+}
+
+
+@media (max-width:650px) {
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
+
